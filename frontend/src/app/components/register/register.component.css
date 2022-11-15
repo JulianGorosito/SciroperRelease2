@@ -1,0 +1,245 @@
+/*-----------------------------------*/
+/*Ventana Emergente Config*/
+/*-----------------------------------*/
+
+.Cont-InicioSesion{
+  background: rgba(0, 0, 0, .3) ;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 30px black;
+  cursor: url('../../../assets/img/General/cursor/default.png'), auto;
+}
+
+/*esta es la ventana que se ve al medio donde el usuario ingresa sus datos*/
+.Cont-Ventana{
+  height: 340px;
+  width: 300px;
+  padding: 20px;
+  margin-top: 150px;
+
+  background-image: url("../../../assets/img/Login/UI_Login/RegisterUser.png");
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+
+  text-align: center;
+  font-size: 30px;
+  font-family: PIXEL;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.Inputs{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#textInput{
+  height: 25px;
+  width: 150px;
+
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+
+  font-size: 15px;
+  font-family: MinePixel;
+}
+
+#Usuario_Input{
+  margin: 10px;
+  height: 33px;
+  width: 150px;
+  background-image: url("../../../assets/img/Login/UI_Login/input_background.png");
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  transition: .3s ease all;
+  text-align: center;
+  color: #ffd541;
+  font-size: 15px;
+  font-family: MinePixel;
+}
+
+#Usuario_Input:hover{
+  transform: scale(1.04);
+  background-image: url("../../../assets/img/Login/UI_Login/input_background_press.png");
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+#Usuario_Input::placeholder{
+  text-align: center;
+  color: white;
+}
+
+#Contraseña_Input{
+  margin: 10px;
+  height: 33px;
+  width: 150px;
+  background-image: url("../../../assets/img/Login/UI_Login/input_background.png");
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  transition: .3s ease all;
+  text-align: center;
+  color: #ffd541;
+  font-size: 15px;
+  font-family: MinePixel;
+}
+
+#Contraseña_Input:hover{
+  transform: scale(1.04);
+  background-image: url("../../../assets/img/Login/UI_Login/input_background_press.png");
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+
+}
+
+#Contraseña_Input::placeholder{
+  text-align: center;
+  color: white;
+}
+
+#cont-btn{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction:row;
+}
+
+#LoginButton{
+  display: none;
+}
+
+
+.btn_login{
+  margin: 10px;
+  height: 42px;
+  width: 96px;
+  color: white;
+  padding-top: 3px;
+  transition: .3s ease all;
+  font-family: MinePixel;
+  background-image: url("../../../assets/img/Login/UI_Login/btn_login.png");
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: url('../../../assets/img/General/cursor/mano.png'), auto;
+}
+
+.btn_login:hover{
+  color: #ffd541;
+  transform: scale(1.04);
+  background-image: url("../../../assets/img/Login/UI_Login/btn_login_press.png");
+}
+
+.Cont-Titulo{
+  height: 25%;
+  width: 30%;
+
+  margin-left: 35%;
+  margin-top: 30px;
+
+  box-sizing: border-box;
+
+  position: fixed;
+  display: block;
+  cursor: url('../../../assets/img/General/cursor/default.png'), auto;
+}
+
+.Titulo{
+  height: 100%;
+  width: auto;
+
+  margin-top: 3%;
+  margin-bottom: 3%;
+
+  background-image: url('../../../assets/img/General/Logo/game_static.png');
+  background-size: 100% ;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+#Cont-Extra{
+  position: fixed;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  cursor: url('../../../assets/img/General/cursor/default.png'), auto;
+}
+
+#Check{
+  width: 32px;
+  height: 32px;
+  color: white;
+
+  margin-top: 430px;
+  margin-left: 860px;
+
+  background-image: url('../../../assets/img/Login/UI_Login/check.png');
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  transition: .3s ease all;
+  border: none;
+  position: fixed;
+  display: none;
+}
+
+.btn_back{
+  height: 64px;
+  width: 64px;
+  margin-top: 20px;
+  margin-left: 20px;
+
+  background-image: url('../../../assets/img/Game/UI/Buttons/btn_back.png');
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+  transition: .3s ease all;
+  border: none;
+  cursor: url('../../../assets/img/General/cursor/mano.png'), auto;
+}
+
+.btn_back:hover{
+  background-image: url('../../../assets/img/Game/UI/Buttons/btn_back_press.png');
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  transform: scale(1.10);
+}
+
+@font-face { /*Esto agrega una font propia*/
+  font-family: 'MinePixel';
+  src: url('../../../assets/font/Minecraft.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}

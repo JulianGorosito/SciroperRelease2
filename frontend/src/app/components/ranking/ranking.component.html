@@ -1,0 +1,38 @@
+<div class="Cont-PlayerList">
+
+  <div class="Cont-Titulo">
+    <div class="Titulo"> </div>
+  </div>
+
+  <div id="Cont-DatosPlayerList">
+
+    <div id="Tabla">
+      <table id="users">
+
+        <tr>
+          <th id="top-user">user</th>
+          <th id="top-points">points</th>
+        </tr>
+
+        <tbody *ngFor="let player of Ranking" id="tBody_ranking">
+            <td id="users_valores"> {{this.player.user}} </td>
+            <td id="points_valores"> {{this.player.points}} </td>
+        </tbody>
+
+      </table>
+
+    </div>
+
+  </div>
+
+
+</div>
+
+
+<div id="Cont-Extra">
+  <div>
+    <button class="btn_back" [routerLink]="'/home'"></button>
+  </div>
+
+  <div id="FirstPosition"></div>
+</div>

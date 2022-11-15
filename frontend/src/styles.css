@@ -1,0 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{ /*Modificar el fondo default de todos los componentes */
+	background-image: url("./assets/img/General/Background/General.png");
+}

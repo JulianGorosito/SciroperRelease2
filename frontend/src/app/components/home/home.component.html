@@ -1,0 +1,67 @@
+<div class="Cont-Home" > <!-- Todo el menu de inicio -->
+
+  <div class="Cont-Titulo">
+    <div class="Titulo"> </div>
+  </div>
+
+  <div class="Cont-Opciones">
+
+    <div id="OptionsGame">
+      <button class="BotonOpc" id="Opc-Jugar" [routerLink]="'/game'">Play</button> <!-- Acceder a la partida -->
+
+      <button class="BotonOpc" id="Opc-Ranking" [routerLink]="'/ranking'">Ranking</button> <!-- Acceder a la partida -->
+
+      <button class="BotonOpc" id="Opc-Salir" (click)="Salir()" >log out</button> <!-- Vuelve al Login -->
+    </div>
+
+    <div id="OptionsLogin">
+
+      <button class="BotonOpcLogin" id="Opc-Jugar" [routerLink]="'/login'">Login</button> <!-- Redirigir a logearte -->
+
+      <button class="BotonOpcLogin" id="Opc-Ranking" [routerLink]="'/register'">Register</button> <!-- Redirigir a Registrarte -->
+
+    </div>
+
+  </div>
+
+
+
+  <div class="Cont-Pie">
+    <!-- al presionar que muestre o oculte el nombre de usuario-->
+        <div class="Cont-Perfil">
+          <button class="Mostrando" id="Opc-Perfil" (click)="MostrarDatos()"> </button>
+        </div>
+
+        <div class="Cont-Credit">
+    <!-- Redireccionar a nuestro Git -->
+          <a href="https://github.com/JulianGorosito?tab=repositories" target="_blank">
+            <button class="BotonOpc2" id="Opc-Git"> </button>
+          </a>
+    <!-- Redireccionar a la pagina del la Utn -->
+          <a href="https://www.frvt.utn.edu.ar/" target="_blank">
+            <button class="BotonOpc2" id="Opc-UTN" > </button>
+          </a>
+
+        </div>
+
+      </div>
+
+</div>
+
+<div id="User_Datos">
+
+  <div id="UI_User">
+    <div id="UI_Name">
+      <div id="name">
+        {{this.player_user.player_name}}
+      </div>
+    </div>
+
+    <div id="UI_Points">
+      <div id="points">
+        {{this.player_user.player_points}} pts
+      </div>
+    </div>
+  </div>
+
+</div>

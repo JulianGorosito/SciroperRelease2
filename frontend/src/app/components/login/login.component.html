@@ -1,0 +1,39 @@
+<div class="Cont-InicioSesion" id="VentanaInicio">
+
+  <div class="Cont-Ventana">
+
+    <span id="textInput">Ingresa tus datos:</span>
+
+    <form class="Inputs"  >
+
+        <input id="Usuario_Input" type="text" placeholder="User" maxlength="10" #UserInput >
+        <input id="Contraseña_Input" type="password" placeholder="Password" maxlength="10" #PasswordInput>
+
+    </form>
+
+    <div id="cont-btn">
+      <button class="btn_login" (click)="Login(UserInput.value, PasswordInput.value)"> Login </button>
+
+      <div id="RegisterButton">
+        <button class="btn_login" [routerLink]="'/register'"> Register </button>
+      </div>
+
+    </div>
+
+
+  </div>
+
+</div>
+
+<div class="Cont-Titulo">
+  <div class="Titulo"> </div>
+</div>
+
+<div id="Cont-Extra">
+  <div>
+    <button class="btn_back" [routerLink]="'/home'"></button>
+  </div>
+
+  <div id="Check"> </div>
+
+</div>

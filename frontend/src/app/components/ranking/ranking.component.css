@@ -1,0 +1,195 @@
+.Cont-PlayerList{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  cursor: url('../../../assets/img/General/cursor/default.png'), auto;
+}
+
+.Cont-Titulo{
+  height: 20%;
+  width: 30%;
+
+  margin-top: 2%;
+
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.Titulo{
+  height: 80%;
+  width: 100%;
+
+  background-size: 100% ;
+  background-repeat: no-repeat;
+
+  box-sizing: border-box;
+  background-image: url("../../../assets/img/Ranking/logo/Ranking_Logo.png");
+  background-size: 100% ;
+  background-repeat: no-repeat;
+}
+
+#Cont-Extra{
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  cursor: url('../../../assets/img/General/cursor/default.png'), auto;
+}
+
+.btn_back{
+  height: 64px;
+  width: 64px;
+  margin-top: 20px;
+  margin-left: 20px;
+
+  background-image: url('../../../assets/img/Game/UI/Buttons/btn_back.png');
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+  transition: .3s ease all;
+  border: none;
+  cursor: url('../../../assets/img/General/cursor/mano.png'), auto;
+}
+
+.btn_back:hover{
+  background-image: url('../../../assets/img/Game/UI/Buttons/btn_back_press.png');
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  transform: scale(1.10);
+}
+
+
+/* TABLAS */
+
+#Cont-DatosPlayerList{
+  height: auto;
+  width: auto;
+  margin-top: 200px;
+  margin-bottom: 40px;
+  margin-left: 540px;
+  position: fixed;
+}
+
+#Tabla{
+  height: auto;
+  width: auto;
+
+  background-color: transparent;
+}
+
+#top-user{
+  height: 60px;
+  width: 240px;
+  color: #ffd541;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: MinePixel;
+  font-size: 15px;
+  background-image: url('../../../assets/img/Ranking/top_users.png');
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+}
+
+#top-points{
+  height: 60px;
+  width: 171px;
+  color: #ffd541;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: MinePixel;
+  font-size: 15px;
+  background-image: url('../../../assets/img/Ranking/top_points.png');
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  border-left: transparent 5px solid;
+}
+
+#users{
+  border-collapse:collapse;
+  width: 100%;
+  color: white;
+  background-color: transparent;
+}
+
+#users_valores{
+  height: 60px;
+  width: 240px;
+  border: 2px solid #222034;
+  text-align: center;
+  margin: 5px;
+  font-size: 20px;
+  font-family: MinePixel;
+  background-image: url('../../../assets/img/Ranking/ranking_users.png');
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent ;
+  border: none;
+  border-top: transparent 10px solid;
+}
+
+#points_valores{
+  height: 60px;
+  width: 171px;
+  border: 2px solid #222034;
+  text-align: center;
+  margin: 5px;
+  font-size: 20px;
+  font-family: MinePixel;
+
+  background-image: url('../../../assets/img/Ranking/ranking_points.png');
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  border-top: transparent 10px solid;
+  border-left: transparent 5px solid;
+  }
+
+#FirstPosition{
+  height: 48px;
+  width: 48px;
+
+  margin-top: 190px;
+  margin-left: 480px;
+  background-image: url('../../../assets/img/Ranking/FirstRanking.png');
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+
+  border: none;
+  position: fixed;
+  transition: .3s ease all;
+
+}
+
+#FirstPosition:hover{
+  transform: scale(1.10);
+}
+
+@font-face { /*Esto agrega la font Dogica*/
+  font-family: 'DogicaPixel';
+  src: url('../../../assets/font/DOGICA-PIXEL.otf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face { /*Esto agrega la font PIXEL-LI*/
+  font-family: 'PIXEL';
+  src: url('../../../assets/font/PIXEL-LI.TTF') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face { /*Esto agrega una font propia*/
+  font-family: 'MinePixel';
+  src: url('../../../assets/font/Minecraft.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}

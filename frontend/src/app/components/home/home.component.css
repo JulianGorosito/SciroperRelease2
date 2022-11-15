@@ -1,0 +1,296 @@
+.Cont-Home{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url('../../../assets/img/General/Background/General.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  cursor: url('../../../assets/img/General/cursor/default.png'), auto;
+}
+
+.Cont-Titulo{
+  height: 38%;
+  width: 30%;
+
+  padding-top: 4%;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  box-sizing: border-box;
+}
+
+.Titulo{
+  height: 80%;
+  width: auto;
+
+  background-image: url("../../../assets/img/General/Logo/home_animated.gif");
+  background-size: 100% ;
+  background-repeat: no-repeat;
+
+  box-sizing: border-box;
+}
+
+.Cont-Opciones{
+  height: 51%; /* 42 queda justo (vemos para distribuir) */
+  width: 700px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#OptionsGame{
+  display: block;
+}
+
+.BotonOpc{
+  height: 52px;
+  width: 256px;
+
+  cursor: pointer;
+
+  margin-top: 1%;
+  margin-bottom: 1%;
+
+  background-image: url("../../../assets/img/Home/UI/btn.png") ;
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0;
+
+  font-size: 30px;
+  font-family: PIXEL;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: .3s ease all;
+  cursor: url('../../../assets/img/General/cursor/mano.png'), auto;
+}
+
+.BotonOpc:hover{
+  background-image: url("../../../assets/img/Home/UI/btn_press.png") ;
+  background-size: 100% ;
+  background-repeat: no-repeat;
+
+  color: #ffd541;
+  transform: scale(1.04);
+}
+
+#OptionsLogin{
+  display: none;
+}
+
+.BotonOpcLogin{
+  height: 52px;
+  width: 256px;
+
+  cursor: pointer;
+
+  margin-top: 1%;
+  margin-bottom: 1%;
+
+  background-image: url("../../../assets/img/Home/UI/btn.png") ;
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0;
+
+  display: block;
+  font-size: 30px;
+  font-family: PIXEL;
+  color: white;
+
+  margin-left: auto;
+  margin-right: auto;
+  transition: .3s ease all;
+  cursor: url('../../../assets/img/General/cursor/mano.png'), auto;
+}
+
+.BotonOpcLogin:hover{
+  background-image: url("../../../assets/img/Home/UI/btn_press.png") ;
+  background-size: 100% ;
+  background-repeat: no-repeat;
+
+  color: #ffd541;
+  transform: scale(1.04);
+}
+
+.Cont-Pie{
+  height: 10%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.BotonOpc2{
+  height: 64px;
+  width: 64px;
+  cursor: pointer;
+  transition: .3s ease all;
+
+}
+
+.Cont-Perfil{
+  display: flex;
+  flex-direction:row;
+}
+
+#UsuarioName{
+  height: 55%;
+  width: auto;
+
+  margin-top: 7%;
+  margin-left: 10px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  color: white;
+  font-size: 30px;
+  font-family: PIXEL;
+  text-align: center;
+
+  background: rgba(0, 0, 0, .3) ;
+}
+
+.Cont-Credit{
+  margin-left: auto;
+  margin-right: 30px;
+
+}
+
+#Opc-Perfil{
+  height: 64px;
+  width: 64px;
+
+  margin-left: 30px;
+
+  background-image: url('../../../assets/img/Home/UI/btn_user_press.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 100%;
+  background-color: transparent;
+  transition: .3s ease all;
+  border: 0;
+  cursor: url('../../../assets/img/General/cursor/mano.png'), auto;
+}
+
+#Opc-Perfil:hover{
+  background-image: url('../../../assets/img/Home/UI/btn_user_press.png');
+  transform: scale(1.04);
+}
+
+#Opc-Git{
+  height: 64px;
+  width: 64px;
+  cursor: pointer;
+
+  background-image: url('../../../assets/img/Home/UI/btn_git.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 100%;
+  background-color: transparent;
+  transition: .3s ease all;
+  border: 0;
+  margin-right: 10px;
+  cursor: url('../../../assets/img/General/cursor/mano.png'), auto;
+}
+
+#Opc-Git:hover{
+  background-image: url('../../../assets/img/Home/UI/btn_git_press.png');
+  transform: scale(1.04);
+}
+
+#Opc-UTN{
+  height: 64px;
+  width: 64px;
+  cursor: pointer;
+
+  background-image: url('../../../assets/img/Home/UI/btn_utn.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 100%;
+  background-color: transparent;
+  transition: .3s ease all;
+  border: 0;
+  cursor: url('../../../assets/img/General/cursor/mano.png'), auto;
+}
+
+#Opc-UTN:hover{
+  background-image: url('../../../assets/img/Home/UI/btn_utn_press.png');
+  transform: scale(1.04);
+}
+
+@font-face { /*Esto agrega la font PIXEL-LI*/
+  font-family: 'PIXEL';
+  src: url('../../../assets/font/PIXEL-LI.TTF') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+#User_Datos{
+  position: fixed;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  cursor: url('../../../assets/img/General/cursor/default.png'), auto;
+}
+
+#UI_User{
+  height: 100px;
+  width: 500px;
+  position: fixed;
+  margin-top: 540px;
+  margin-left: 30px;
+
+  display: block;
+  font-size: 30px;
+  font-family: PIXEL;
+  color: white;
+}
+
+#UI_Name{
+  height: 40px;
+  width: 160px;
+  background-image: url('../../../assets/img/Home/UI/UI_User.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 100%;
+  background-color: transparent;
+  position: fixed;
+  text-align: center;
+  margin-top: 45px;
+}
+
+#name{
+  margin-top: 4px;
+}
+
+#UI_Points{
+  height: 40px;
+  width: 148px;
+  background-image: url('../../../assets/img/Home/UI/UI_points.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 100%;
+  background-color: transparent;
+  position: fixed;
+  text-align: center;
+}
+
+#points{
+  margin-top: 9px;
+  font-size: 20px;
+}

@@ -1,0 +1,610 @@
+.Cont-Game{
+  height: 100%;
+  width: 100%;
+
+  background-image: url('../../../assets/img/General/Background/General.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  cursor: url('../../../assets/img/General/cursor/default.png'), auto;
+}
+
+#Cont-Titulo{
+  height: 25%;
+  width: 30%;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  box-sizing: border-box;
+}
+
+#Titulo{
+  height: 100%;
+  width: auto;
+
+  margin-top: 3%;
+  margin-bottom: 3%;
+
+  background-image: url('../../../assets/img/General/Logo/game_static.png');
+  background-size: 100% ;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+#Cont-Partida{
+  height: 75%;
+  width: 100%;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  box-sizing: border-box;
+}
+
+#Cont-SistemaPuntos{
+  height: 40%;
+  width: 100%;
+
+  margin-left:auto;
+  margin-right: auto;
+
+  font-family: PIXEL;
+	font-size: 45px;
+  color: white;
+  display: flex;
+  flex-direction: row; /* colocar en fila */
+  justify-content: space-between;
+}
+
+/*-----------------------------------*/
+/*Usuario Config*/
+/*-----------------------------------*/
+
+#Cont-Usuario{
+  height: auto;
+  width: 40%;
+
+  padding: auto;
+  display: flex;
+  flex-direction: row;
+
+}
+
+#User{
+  height: 158px;
+  width: 230px;
+
+  background-image: url('../../../assets/img/Game/UI/Backgrounds/user.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  background-size: 100% ;
+
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#Etiqueta-Usuario{
+  height: 25%;
+  width: auto;
+
+  margin-top: 10%;
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  text-transform: uppercase;
+  color: white;
+  font-size: 50%;
+  font-family: DogicaPixel;
+  text-align: center;
+}
+
+#ImagenUsuario {
+  height: 98px;
+  width: 98px;
+
+  background-image:  url('../../../assets/img/Game/UI/Choices/rock.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  background-size: 100% ;
+  transition: .3s ease all;
+}
+
+
+#Jugador-Puntos{
+  text-align: center;
+  width: 90px;
+  margin-left: auto;
+  padding-top: 10px;
+  margin-top: 60px;
+  transition: .3s ease all;
+}
+
+#Img_Vs{
+  height: 128px;
+  width: 128px;
+
+  margin-top: 30px;
+  background-image: url('../../../assets/img/Game/UI/vrs.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+}
+
+/*-----------------------------------*/
+/*PC Config*/
+/*-----------------------------------*/
+
+#Pc-Puntos{
+  text-align: center;
+  width: 90px;
+  padding-top: 10px;
+  margin-top: 60px;
+  transition: .1s ease all;
+}
+
+#Cont-Pc{
+  height: 100%;
+  width: 40%;
+
+  padding: auto;
+  display: flex;
+  flex-direction: row;
+
+}
+
+#Pc{
+  height: 158px;
+  width: 230px;
+
+  background-image: url('../../../assets/img/Game/UI/Backgrounds/enemy.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#Etiqueta-PC{
+  height: 25%;
+  width: auto;
+
+  margin-top: 10%;
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  text-transform: uppercase;
+  color: white;
+  font-size: 50%;
+  font-family: DogicaPixel;
+  text-align: center;
+}
+
+#ImagenPC {
+  margin-left: auto;
+
+  height: 98px;
+  width: 98px;
+
+  background-image:  url('../../../assets/img/Game/UI/Choices/rock.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  background-size: 100% ;
+  transition: .1s ease all;
+}
+
+/*-----------------------------------*/
+/*Resultado Config*/
+/*-----------------------------------*/
+
+
+#Cont-Resultado{
+  height: 27%;
+  width: 100%;
+
+  margin-left: auto;
+  margin-right: auto;
+
+	text-align: center;
+  transition: .3s ease all;
+}
+
+#ResultadoImg{
+  height: 100%;
+  width: 40%;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: url("../../../assets/img/Game/UI/Results/lose.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 50%;
+  transition: .1s ease all;
+	text-align: center;
+}
+
+/*-----------------------------------*/
+/*UI Config*/
+/*-----------------------------------*/
+
+.Cont-UI {
+  height: 30%;
+  width: 70%;
+
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.Cont-TextJuego{
+  height: 30%;
+  width: 70%;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#TextJuego {
+  height: 50%;
+  width: auto;
+
+  color: #e38e57;
+  font-size: 20px;
+  font-family: MinePixel;
+  text-align: center;
+  text-transform: uppercase;
+
+  box-sizing: border-box;
+}
+
+.Cont-Eleccion{
+  height: 110px;
+  width: 523px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex; /* Modo flex */
+  flex-direction: row; /* colocar en fila */
+  justify-content: center;
+
+  box-sizing: border-box;
+
+}
+
+.Boton{
+  height: 112px;
+  width: 112px;
+  margin-inline: 25px;
+  cursor: pointer;
+  transition: .3s ease all;
+  cursor: url('../../../assets/img/General/cursor/mano_choice.png'), auto;
+}
+
+#B_Piedra{
+  background-image: url('../../../assets/img/Game/UI/Buttons/btn_rock.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 100%;
+  background-color: transparent;
+  border: 0;
+}
+
+#B_Piedra:hover{
+  background-image: url('../../../assets/img/Game/UI/Buttons/btn_rock_press.png');
+  transform: scale(1.04);
+}
+
+#B_Papel{
+  background-image: url('../../../assets/img/Game/UI/Buttons/btn_paper.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 100%;
+  background-color: transparent;
+  border: 0;
+}
+
+#B_Papel:hover{
+  background-image: url('../../../assets/img/Game/UI/Buttons/btn_paper_press.png');
+  transform: scale(1.04);
+}
+
+#B_Tijeras{
+  background-image: url('../../../assets/img/Game/UI/Buttons/btn_scissors.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 100%;
+  background-color: transparent;
+  border: 0;
+}
+
+#B_Tijeras:hover{
+  background-image: url('../../../assets/img/Game/UI/Buttons/btn_scissors_press.png');
+  transform: scale(1.04);
+}
+
+/*-----------------------------------*/
+/*Ventana al finalizar la partida*/
+/*-----------------------------------*/
+
+#VentanaEmergente{
+  background: rgba(0, 0, 0, .3) ;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  position:fixed;
+  align-items: center;
+  justify-content: center;
+  border: 30px black;
+  transition: .3s ease all;
+  cursor: url('../../../assets/img/General/cursor/default.png'), auto;
+}
+
+#VentanaFinal{
+  height: 680px;
+  width: 400px;
+  margin-top: 450px;
+  padding: 20px;
+
+  background-image: url('../../../assets/img/Game/End_Game/Cont_Final.png');
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+
+  /* text-align: center; */
+  font-size: 30px;
+  font-family: PIXEL;
+  color: white;
+
+  display: none;
+  flex-direction: column;
+  cursor: url('../../../assets/img/General/cursor/default.png'), auto;
+}
+
+#SurrenderWarning{
+  height: 256px;
+  width: 456px;
+  margin-top: 20px;
+
+  background-image: url('../../../assets/img/Game/End_Game/SurrenderWindow.png');
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+
+  /* text-align: center; */
+  font-size: 30px;
+  font-family: PIXEL;
+  color: white;
+  transition: .5s ease all;
+
+  display: none;
+  flex-direction: column;
+  cursor: url('../../../assets/img/General/cursor/default.png'), auto;
+}
+
+.btn_back2{
+  height: 64px;
+  width: 64px;
+
+  background-image: url('../../../assets/img/Game/UI/Buttons/btn_back.png');
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+  transition: .3s ease all;
+  border: none;
+}
+
+.btn_back2:hover{
+  background-image: url('../../../assets/img/Game/UI/Buttons/btn_back_press.png');
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  transform: scale(1.10);
+}
+
+#TextFinal{
+  margin-top: 40px;
+  text-align: center;
+}
+
+#Text1{
+  color: #ffd541;
+  font-size: 40px;
+}
+
+#Text2{
+  color: #c5c7dd;
+  margin-top: 14px;
+  font-size: 25px;
+}
+
+#Text3{
+  color: #c5c7dd;
+  font-size: 25px;
+}
+
+#TextoWarning{
+  margin-top: 120px;
+  text-align: center;
+}
+
+#Text4{
+  color: #c5c7dd;
+  font-size: 25px;
+}
+
+#Text5{
+  color: #c5c7dd;
+  font-size: 25px;
+}
+
+#PtsText{
+  color: #ffd541;
+}
+
+#Cont-Extra{
+  position: fixed;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  cursor: url('../../../assets/img/General/cursor/default.png'), auto;
+}
+
+.btn_back{
+  height: 64px;
+  width: 64px;
+  margin-top: 20px;
+  margin-left: 20px;
+
+  background-image: url('../../../assets/img/Game/UI/Buttons/btn_back.png');
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+  transition: .3s ease all;
+  border: none;
+  position: fixed;
+  cursor: url('../../../assets/img/General/cursor/mano.png'), auto;
+}
+
+.btn_back:hover{
+  background-image: url('../../../assets/img/Game/UI/Buttons/btn_back_press.png');
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  transform: scale(1.10);
+}
+
+.btn_surrender{
+  height: 64px;
+  width: 64px;
+  margin-top: 20px;
+  margin-left: 80px;
+
+  background-image: url('../../../assets/img/Game/UI/Buttons/btn_surrender.png');
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+  transition: .3s ease all;
+  border: none;
+  position: fixed;
+  cursor: url('../../../assets/img/General/cursor/mano.png'), auto;
+}
+
+.btn_surrender:hover{
+  background-image: url('../../../assets/img/Game/UI/Buttons/btn_surrender_press.png');
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  transform: scale(1.10);
+}
+
+#Users-Life{
+  height: 39px;
+  width: 168px;
+  margin-top: 365px;
+  margin-left: 125px;
+  background-image: url('../../../assets/img/Game/UI/Backgrounds/Lifes_10.png');
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  transition: .3s ease all;
+  cursor: url('../../../assets/img/General/cursor/mano.png'), auto;
+}
+
+#Users-Life:hover{
+  transform: scale(1.10);
+}
+
+#Lifes{
+  color: white;
+  padding-top: 26px;
+  padding-left: 60px;
+  font-family: PIXEL;
+  font-size: 30px;
+}
+
+#Opciones{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction:row;
+}
+
+#btn_opc{
+  margin: 10px;
+  height: 42px;
+  width: 96px;
+  color: white;
+  padding-top: 3px;
+  transition: .3s ease all;
+  font-family: MinePixel;
+  background-image: url("../../../assets/img/Login/UI_Login/btn_login.png");
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: url('../../../assets/img/General/cursor/mano.png'), auto;
+}
+
+#btn_opc:hover{
+  color: #ffd541;
+  transform: scale(1.04);
+  background-image: url("../../../assets/img/Login/UI_Login/btn_login_press.png");
+}
+
+@font-face { /*Esto agrega la font Dogica*/
+  font-family: 'DogicaPixel';
+  src: url('../../../assets/font/DOGICA-PIXEL.otf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face { /*Esto agrega la font PIXEL-LI*/
+  font-family: 'PIXEL';
+  src: url('../../../assets/font/PIXEL-LI.TTF') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face { /*Esto agrega una font propia*/
+  font-family: 'MinePixel';
+  src: url('../../../assets/font/Minecraft.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*------------------------------------------------------------------------------*/

@@ -1,0 +1,121 @@
+<!--Contenedor principal del juego-->
+<div class="Cont-Game">
+
+  <div id="Cont-Titulo">
+    <div id="Titulo"> </div>
+  </div>
+
+<!-- Este contenedor contiene lo relevante a la partida (sus puntos, los que se enfrentan y sus elecciones) -->
+<div id="Cont-Partida">
+
+  <div id="Cont-SistemaPuntos">
+    <div id="Cont-Usuario">
+
+      <div id="User">
+        <div id="ImagenUsuario">
+        </div>
+        <div>
+          <div id="Etiqueta-Usuario">{{ this.player_user.player_name }}</div>
+        </div>
+      </div>
+
+      <div id="Jugador-Puntos">{{this.datos.player_cont}}</div>
+
+    </div>
+
+    <div id="Img_Vs"></div>
+
+<!-- Este contenedor contiene todo lo relacionado al pc (pts, eleccion y nombre)  -->
+      <div id="Cont-Pc">
+
+        <div id="Pc-Puntos">{{this.datos.ia_cont}}</div>
+
+        <div id="Pc">
+          <div id="ImagenPC">
+            </div>
+          <div id="Etiqueta-PC">{{  IAName  }}</div>
+        </div>
+
+      </div>
+
+  </div>
+
+  <!-- Este contenedor muestra el resultado de la partida en forma de imagen  -->
+  <div id="Cont-Resultado">
+    <div id="ResultadoImg">
+    </div>
+  </div>
+
+  <!-- Este contenedor contiene toda la Interfaz de usuario -->
+  <div class="Cont-UI">
+    <div class="Cont-TextJuego">
+      <div id="TextJuego">∎ Selecciona tu jugada ∎</div>
+    </div>
+
+    <div class="Cont-Eleccion">
+      <!-- Cada boton da como resultado una eleccion del usuario -->
+      <button class="Boton" id="B_Piedra"  (click)="GameInit('r')"> </button>
+      <button class="Boton" id="B_Papel"   (click)="GameInit('p')"> </button>
+      <button class="Boton" id="B_Tijeras" (click)="GameInit('s')"> </button>
+
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+<!--Contenedor con botones fuera del funcionamiento del juego-->
+<div id="Cont-Extra">
+
+  <div>
+    <div>
+      <button class="btn_back" [routerLink]="'/home'"></button>
+    </div>
+
+    <div>
+      <button class="btn_surrender" (click)="MostrarSurrender()" ></button>
+    </div>
+  </div>
+
+
+  <div id="Users-Life" >
+    <div id="Lifes"> </div>
+  </div>
+</div>
+
+
+<!--Contenedor que aparece al final la partida-->
+<div id="VentanaEmergente">
+
+  <div id="VentanaFinal">
+
+    <div>
+      <button class="btn_back2" [routerLink]="'/home'"></button>
+    </div>
+
+    <div id="TextFinal">
+      <div id="Text1"> {{this.player_user.player_name}} </div>
+      <div id="Text2">Se Acabaron tus intentos,</div>
+      <div id="Text3">Tu puntaje fue <span id="PtsText"> {{this.player_user.player_points}} </span> </div>
+    </div>
+  </div>
+
+  <div id="SurrenderWarning">
+
+    <div id="TextoWarning">
+      <div id="Text4">Te estas apunto de rendir</div>
+      <div id="Text5"> Se perderan todos los datos de la partida</div>
+    </div>
+
+    <div id="Opciones">
+      <button id="btn_opc" (click)="surrender()"> confirmar </button>
+      <button id="btn_opc" (click)="OcultarSurrender()"> cancelar </button>
+    </div>
+
+  </div>
+
+</div>
+
+
+
